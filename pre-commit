@@ -17,16 +17,17 @@
 
 # "Forbidden" regular expressions
 FORBIDDEN = [
-  /TMP_DEBUG/, # My TextExpander macros for embedding debug code always include this for easy scanning.
-  />>>>>>/,    # Git conflict markers
-  /<<<<<</,    # ''
-  /======/,    # ''
-  /console\.debug/,  # JavaScript debug code that would break IE.
-  /console\.log/,    # ''
+  /TMP_DEBUG/,           # My TextExpander macros for embedding debug code always include this for easy scanning.
+  />>>>>>/,              # Git conflict markers
+  /<<<<<</,              # ''
+  /======/,              # ''
+  /console\.debug/,      # JavaScript debug code that would break IE.
+  /console\.log/,        # ''
   /binding\.pry/,        # pry debugging code
   /binding\.remote_pry/, # ''
   /save_and_open_page/,  # Launchy debugging code
-  /debugger/             # Ruby debugging code
+  /debugger/,            # Ruby debugging code
+  /byebug/
 ]
 
 # Warning signs that someone is committing a private key
